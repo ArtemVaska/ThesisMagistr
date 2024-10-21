@@ -4,24 +4,45 @@
 \begin{document}
 
 % Включение титульного листа (первая страница файла Title.pdf)
-\includepdf[pages={1-1}]{extra/Title.pdf}
+% \includepdf[pages={1-1}]{extra/Title.pdf}
 
-% Аннотация, Содержание, Введение
+% Титульный лист
+\input{chapters/title.tex}
+
+% Аннотация
+% \input{chapters/annotation.tex}
+
+% Оглавление
+\input{chapters/toc.tex}
+
+% Список использованных сокращений
+% \input{chapters/abbreviations.tex}
+
+% Введение
 \input{chapters/introduction.tex}
 
-% Подключение глав
-\input{chapters/chapter_1.tex}
-\input{chapters/chapter_2.tex}
-\input{chapters/chapter_3.tex}
-\input{chapters/chapter_4.tex}
+% Материалы и методы
+\input{chapters/materials_methods.tex}
 
-% Заключение
+% Результаты и обсуждение
+\input{chapters/results_discussion.tex}
+
+% Результаты
+% \input{chapters/results.tex}
+
+% Обсуждение
+% \input{chapters/discussion.tex}
+
+% Выводы
 \input{chapters/conclusion.tex}
 
-% Библиографический список
-\input{chapters/bibliography.tex}
+% Список литературы
+% \input{chapters/bibliography.tex}
+
+% Благодарности
+% \input{chapters/thanks.tex}
 
 % Приложение (может быть пустым)
-\input{chapters/appendix.tex}
+% \input{chapters/appendix.tex}
 
 \end{document}

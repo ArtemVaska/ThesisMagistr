@@ -1,7 +1,8 @@
 \documentclass[
 candidate, % document type
 subf, % use and configure subfig package for nested figure numbering
-times % use Times font as main
+times, % use Times font as main
+12pt, % default font size
 ]{disser}
 
 % Кодировка и язык
@@ -10,9 +11,11 @@ times % use Times font as main
 \usepackage[english,russian]{babel} % переключение языков
 
 % Геометрия страницы и графика
-\usepackage[left=3cm, right=1cm, top=2cm, bottom=2cm]{geometry} % поля страницы
+\usepackage[left=3.5cm, right=1cm, top=2cm, bottom=2cm]{geometry} % поля страницы
+\usepackage[onehalfspacing]{setspace} % 1.5 интервал
 \usepackage{graphicx} % подключение графики
 \usepackage{pdfpages} % вставка pdf-страниц
+\usepackage{ragged2e} % выравнивание текста (центр, слева, справа)
 
 % Таблицы
 \usepackage{array} % расширенные возможности для работы с таблицами
@@ -34,7 +37,6 @@ times % use Times font as main
 \usepackage{multirow} % объединение ячеек таблиц по вертикали
 \usepackage{afterpage} % вставка материала после текущей страницы
 \usepackage[font={normal}]{caption} % настройка подписей к рисункам и таблицам
-\usepackage[onehalfspacing]{setspace} % полуторный интервал
 \usepackage{fancyhdr} % установка колонтитулов
 \usepackage{listings} % поддержка вставки исходного кода
 
